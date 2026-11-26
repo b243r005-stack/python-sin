@@ -1,20 +1,17 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# x軸のデータ
-x = np.linspace(0, 2 * np.pi, 1000)
+# データ数
+n = 200
 
-# 正弦波の計算
+# 横軸を作成（0～4π）
+x = np.linspace(0, 4*np.pi, n)
+
+# 正弦波を作成
 y = np.sin(x)
 
-# グラフの描画
+# グラフを描画
 plt.plot(x, y)
 
-# グラフの設定
-plt.title("Sine Wave")
-plt.xlabel("x")
-plt.ylabel("sin(x)")
-plt.grid()
-
-# グラフを表示
+# 表示
 plt.show()
